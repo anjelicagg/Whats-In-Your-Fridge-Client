@@ -33,3 +33,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  // script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("add-item-btn").addEventListener("click", function () {
+    const newItemInput = document.getElementById("new-item");
+    const value = newItemInput.value.trim();
+
+    if (value) {
+      const li = document.createElement("li");
+      const label = document.createElement("label");
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+
+      label.appendChild(checkbox);
+      label.appendChild(document.createTextNode(" " + value));
+      li.appendChild(label);
+
+      document.getElementById("checklist").appendChild(li);
+      newItemInput.value = "";
+    }
+  });
+});

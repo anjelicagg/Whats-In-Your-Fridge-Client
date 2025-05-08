@@ -6,13 +6,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mindful-kitchen/style.css" />
      <script defer src = script.js> </script>
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <h1> What's In Your Fridge? </h1>
-        </header>
+
+    <header class="main-header">
+        <img src= "./mindful-kitchen/public/Images/Mindful Kitchen Logo Design.png" alt="Fridge with pink brain on right side" class="fridge-image" />
+        <h1>Welcome to Mindful Kitchen</h1>
+  
+    
+      <!-- Navigation Menu -->
+     
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fridge.html">Fridge</a></li>
+          <li><a href="pantry.html">Pantry</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+      </header>
+
+         <main class ="content-container"> 
         <div class = "login-container">
             
                 <label for="fname">Username:</label><br>
@@ -22,5 +40,6 @@
                 <input type="submit" value="Submit">
               </form>
         </div>
+    </main>
 </body>
 </html>
