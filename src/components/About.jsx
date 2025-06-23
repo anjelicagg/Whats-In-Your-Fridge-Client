@@ -15,12 +15,12 @@ function About() {
 
       <section className="kitchen-visuals">
         <div className="fridge-preview" onClick={() => window.location.href = '/fridge'}>
-          <img src="/images/fridge-icon.png" alt="Fridge" />
+          <img src="/Images/fridge-icon.jpeg" alt="Fridge" />
           <p>Go to Fridge</p>
         </div>
 
         <div className="pantry-preview" onClick={() => window.location.href = '/pantry'}>
-          <img src="/images/pantry-icon.png" alt="Pantry" />
+          <img src="/Images/pantry-icon.png" alt="Pantry" />
           <p>Go to Pantry</p>
         </div>
       </section>

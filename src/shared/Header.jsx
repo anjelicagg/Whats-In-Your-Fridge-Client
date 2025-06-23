@@ -16,9 +16,10 @@ style={{width:'120px',height:'auto'}} />
   <ul className="navbar">
     <li><a href="/" className="hover:text-green-900">Home</a></li>
     <li><a href="/fridge" className="hover:text-green-900">Fridge</a></li>
-    <li><a href="/pantry" className="hover:text-green-900">Pantry</a></li>
-    <li><a href="/resources" className="hover:text-green-900">Resources</a></li>
-    <li><a href="/about" className="font-bold text-green-900">About</a></li>
+    <li><a href="/about" className="font-bold text-green-900">About</a></li> 
+     <li><a href="/signup" className="font-bold text-green-900">Login</a></li>
+    <li><a href="/contact" className="hover:text-green-900">Contact</a></li>
+  
   </ul>
 </nav>
 </div>
