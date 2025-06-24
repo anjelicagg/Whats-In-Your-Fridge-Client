@@ -10,7 +10,9 @@ function About() {
           Mindful Kitchen is built to help neurodivergent individuals manage their kitchens with ease,
           reduce food waste, and take the guesswork out of meal planning. We know the fridge and pantry
           can feel like chaos — this app brings clarity and control.
-        </p>
+        </p> <div className="dopamine-about">
+        <img src ="/Images/dope-kitchen.jpeg" alt />
+        </div>
       </section>
 
       <section className="kitchen-visuals">
@@ -19,9 +21,9 @@ function About() {
           <p>Go to Fridge</p>
         </div>
 
-        <div className="pantry-preview" onClick={() => window.location.href = '/pantry'}>
-          <img src="/Images/pantry-icon.png" alt="Pantry" />
-          <p>Go to Pantry</p>
+        <div className="pantry-preview" onClick={() => window.location.href = '/signup'}>
+          <img src="/Images/pantry-icon.jpg" alt="Pantry" />
+          <p>Sign Up!</p>
         </div>
       </section>
     </main>

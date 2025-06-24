@@ -1,3 +1,4 @@
+
 ## All About MK
 Mindful Kitchen is the brainchild of an idea that I had years ago in my early teens when I realized my family would purchase the same items but would manage to forget the forgotten item in the fridge. I also noticed that it wasnt uncommon to find expired sauces in the fridge because the idea of throwing them away was a sin to my grandparents who moved to the US in the 60's (If you're Carribean or latin then you know the struggle). 
 
@@ -49,4 +50,7 @@ To my Cousin- Thank you for always encouraging me and checking in, you kept me g
 To my friends who prayed for me and encouraged me thank you for being my support and village even hundreds of miles. 
 
 
+
+=======
+# What-s-In-Your-Fridge-base
 

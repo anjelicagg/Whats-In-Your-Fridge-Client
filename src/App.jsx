@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import { Routes,Route } from 'react-router-dom';
-// import {useState} from "react"
+import {useState} from "react"
 
 import Header from './shared/Header';
 import Home from './components/Home';
@@ -10,8 +10,6 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import About from './components/About';
 import Fridge from './components/Fridge';
-
-
 import Footer from './shared/Footer';
 import UpdateFridge from './components/UpdateFridge';
 import Contact from "./components/Contact";
@@ -19,9 +17,9 @@ import Contact from "./components/Contact";
 // import Resources from './components/Resources';
 
 function App() {
-// const [user,setUser]=useState(
-//   JSON.parse(localStorage.getItem("user")) || {}
-// );
+const [user,setUser]=useState(
+  JSON.parse(localStorage.getItem("user")) || {}
+);
   return(
     <div className="App"> 
 <main> 
@@ -30,8 +28,8 @@ function App() {
    <Route path="/" element={<Home/>} />
    <Route path="/about" element={<About/>} /> 
 
-  <Route path="/SignUp" element={<SignUp/>} /> 
-   <Route path="/Login" element={<Login/>} /> 
+  <Route path="/signup" element={<SignUp/>} /> 
+   <Route path="/login" element={<Login/>} /> 
 
 
  <Route path="/fridge" element={<Fridge/>} />

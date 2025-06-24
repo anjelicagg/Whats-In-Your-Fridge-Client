@@ -1,115 +1,220 @@
-
 /* ABOUT PAGE VISUALS */
 .kitchen-visuals {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   flex-wrap: wrap;
- 
 }
 
 .kitchen-visuals div {
-  text-align: center;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  background-color: #e8f5e9;
+  margin: 1rem;
+  background-color: #f9fbe7;
   border-radius: 12px;
+  border: 2px solid #dce775;
+  width: 180px;
+  min-height: 100px;
   transition: transform 0.2s ease-in-out;
-  width: 200px;
 }
 
 .kitchen-visuals div:hover {
   transform: scale(1.05);
-  background-color: #c8e6c9;
+  background-color: #dcedc8; /* light green hover */
 }
 
 .kitchen-visuals img {
-  width: 100px;
-  height: auto;
+  width: 60px;    
+  height: 60px;
+  object-fit: contain;
 }
 
 .intro-text {
   text-align: center;
   margin-bottom: 2rem;
+  color: #558b2f; /* medium dark green */
 }
 
+.dopamine-about{
+  width: 100%;
+  max-width: 500px; 
+  
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
 
+.dopamine-about img {
+  width: 100%;
+  max-height:auto;
+  display: block;
+  border-radius: 16px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+/* BODY AND BACKGROUND */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fffde7;
-  color: #333;
+  background-color: #fff9c4; /* light buttery yellow */
+  color: #33691e; /* dark green text */
 }
 
-header.main-header {
-  background-color: #ff9800; /* Fridge default green */
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #7cb342; /* bright leafy green */
   color: white;
-  text-align: center;
-  padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-
-header.main-header h1 {
-  margin: 0;
-  font-size: 2rem;
+.header-content{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:1rem;
 }
 
-/* Pantry theme override */
+.text {
+  flex: 1 1 300px;
+  margin: 0;
+}
+
+.Home-Title  {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fdd835; /* sunny yellow */
+  text-align:center;
+  flex-shrink:0;
+}
+.MK-Logo {
+  
+  width: 120px;
+  height: auto;
+  flex-shrink:0;
+} 
+
+nav {
+  flex: 1 1 100%;
+  margin-top: 1rem;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fdd835; /* sunny yellow */
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #c0a92c; /* darker yellow */
+}
+
+/* Responsive header */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    text-align: center;
+    flex: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav {
+    flex: none;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+/* PANTRY THEME OVERRIDE */
 header.pantry-theme {
-  background-color: #8bc34a;
+  background-color: #aed581; /* lighter green */
 }
 
 header.pantry-theme h1 {
   font-family: Georgia, serif;
+  color: #558b2f;
 }
 
-/* Shared container */
+/* SHARED CONTAINER */
 .content-container {
   max-width: 600px;
   margin: 2rem auto;
-  background: #fff;
+  background: #f1f8e9; /* pale green */
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #c5e1a5;
 }
 
-/* Fridge default box */
+/* FRIDGE DEFAULT BOX */
 .content-container:not(.pantry-box) {
   background-color: #e8f5e9;
   border: 3px solid #a5d6a7;
 }
 
-/* Pantry container */
+/* PANTRY CONTAINER */
 .pantry-box {
   background-color: #fbe9e7;
   border: 3px solid #d7ccc8;
 }
 
-/* Headings */
-
-
-.mk-logo{
-  width:60px;
-  height:auto;
+/* LOGO */
+.Logo{
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
 }
 
+/* FORM CONTAINER */
 .form-container {
-  max-width:700px;
-  margin: 2 rem auto;
-  padding: 2 rem;
-  background: #fffde7;
-  border: 3px solid #fff176;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  
+  background: #fffef3; 
+  border: 3px solid #fdd835; 
   border-radius: 16px;
-  box-shadow: 0 4pc 12px rgba (0,0,0,0.1);
-  color: #e65100
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #558b2f; 
 }
-.form-container h1{
-  text-align:center;
-  font-size:2rem;
-  margin-bottom: 1.5 rem;
-  color: #f57f17;
+
+/* FORM TITLE */
+.form-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #7cb342; /* bright green */
 }
+
+/* FORM FIELDS SPACING */
 .addItem,
 .category,
 .quantity,
@@ -117,58 +222,168 @@ header.pantry-theme h1 {
 .dateAdded,
 .location,
 .notes,
-.isOpened{
-  margin-bottom:1rem
+.isOpened {
+  margin-bottom: 0.5rem;
 }
 
-label{
+/* LABELS */
+label {
   display: block;
-  margin-bottom: 0.4 rem;
-  font-weight:bold;
-  color: #558b2f
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #558b2f;
 }
-input[type="checkbox"]{
-  margin-left: 0.5 rem;
-accent-color: #fbc02d;
-}
-.submit{
-  margin-top:1.5 rem;
-  background-color:#ffb300;
-  color: #fff;
-  font-weight:bold;
-  padding:0.75 rem 1.5rem;
-  font-size: 1 rem;
-  border-radius 12px;
-  cursor: pointer;
 
+/* INPUTS & SELECTS */
+input,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
-.submit:hover{
-  background-color: #f57c00;
+
+/* CHECKBOX */
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+  accent-color: #fbc02d; /* golden yellow */
+  width: auto;
 }
-.contact-form{
-  display:flex;
-  flex-direction:column;
+
+/* SUBMIT BUTTON */
+.submit {
+  margin-top: 1.5rem;
+  background-color: #fdd835; /* sunny yellow */
+  color: #33691e; /* dark green text */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #c0a92c; /* darker yellow */
+}
+
+/* CONTACT FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   max-width: 500px;
-  margin:0 auto
+  margin: 0 auto;
 }
+
 .contact-form input,
 .contact-form textarea {
   padding: 0.5rem;
   font-size: 1rem;
-  border:2px solid #ccc;
-  border-radius:8px
-}
-.contact-form button{
-  background-color: #ff9800;
-  color:white;
-  border:none;
-  padding:0.75rem;
-  font-weight:bold;
-  border-radius:8px;
-  cursor: pointer;
+  border: 2px solid #c5e1a5; 
+  border-radius: 8px;
 }
 
-.contact-form button:hover{
-  background-color:#fb8c00
+.contact-form button {
+  background-color: #7cb342; 
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #558b2f; 
+}
+/* Home */
+.dopamine-kitchen {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.dopamine-kitchen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+.home-container {
+  background-color: #fff9e3;
+  padding: 2rem;
+  color: #3caea3;;
+  font-family:"Open Sans", sans-serif
+}
+
+.home-container h2 {
+  color: #ff9635; 
+  font-size:2.4rem;
+  margin-bottom: 1rem;
+}
+.home-container p{
+  color:#f6bd60;
+  font-size:1.2rem;
+  margin-bottom: 2rem;
+}
+.dopamine-kitchen{
+width:100;
+max-width: 700px;
+margin: 0 auto 2rem auto;
+border-radius: 16px;
+box-shadow: 0 4px 15px rgba(60,174,163,0.3);
+}
+
+.dopamine-kitchen img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 16px;
+}
+
+/* FRIDGE PREVIEW */
+ .fridge-preview{
+  background-color: #fffef3;
+  border-radius: 15px;
+  max-width: 800px;
+  margin:0 auto;
+  box-shadow: 0 4px 10px rgba(60,174,163,0.3);
+  color:#333;
+  padding: 1.5em;
+  border: #f6bd60;
+
+ }
+
+ .signup-container form{
+  display:flex;
+  flex-direction: column;
+ }
+
+/* SIGNUP BUTTON */
+.signup {
+  margin-top: 1.5rem;
+  margin-left: 15rem;
+  background-color: #fdd835; 
+  color: #33691e;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: #c0a92c; 
 }
