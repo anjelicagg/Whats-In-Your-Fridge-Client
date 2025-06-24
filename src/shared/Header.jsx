@@ -15,9 +15,9 @@ style={{width:'120px',height:'auto'}} />
 <nav className="bg-green-100 py-3 shadow-sm">
   <ul className="navbar">
     <li><a href="/" className="hover:text-green-900">Home</a></li>
-    <li><a href="/fridge" className="hover:text-green-900">Fridge</a></li>
+    <li><a href="/fridge" className="hover:text-green-900">Kitchen</a></li>
     <li><a href="/about" className="font-bold text-green-900">About</a></li> 
-     <li><a href="/signup" className="font-bold text-green-900">Login</a></li>
+     <li><a href="/login" className="font-bold text-green-900">Login</a></li>
     <li><a href="/contact" className="hover:text-green-900">Contact</a></li>
   
   </ul>

@@ -18,12 +18,13 @@ Mindful Kitchen was created to help users track what's in their fridge and pantr
 - React
 - Node.JS
 - GitHub
--MongoDB
+- MongoDB
 
 
 #Future Features and Improvements 
 - image uploads 
 - recipe recommendation feature integrated with AI to generate recipes 
+- seperate pages for Fridge & Pantry 
 
 ## Acknowledgments 
 

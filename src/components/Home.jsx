@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Home ()  {
   const [food,setFood]= useState([])
   const navigate = useNavigate();
+  const [errorMessage, setErrorMessage ]=useState("");
 
   useEffect(() => {
     fetch(`http://localhost:8080/api/fridge/`, {
@@ -38,7 +39,13 @@ function Home ()  {
         window.location.reload();
       })
       .catch((error) => console.log("error :>> ", error));
+      
   }
+  const dateFormat = (date) => {
+    const myDate = new Date(date).toLocaleDateString()
+    console.log(myDate)
+    return myDate;
+  };
   return (
     <div className="kitchen">
        <main className="main-content">
